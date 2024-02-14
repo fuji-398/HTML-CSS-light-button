@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Element</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
+
+        .glow-element {
+            font-size: 2em;
+            padding: 10px;
+            color: #607dff;
+            background-color: #ffffff;
+            border-radius: 5px;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #3445db, 0 0 20px #3445db, 0 0 30px #3445db;
+            }
+            to {
+                box-shadow: 0 0 20px #3445db, 0 0 30px #3445db, 0 0 40px #3445db;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-element">light</div>
+</body>
+</html>
